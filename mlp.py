@@ -104,11 +104,11 @@ def weighted_sum(
     return y_hat
 
 
+weight_input2hidden, weight_hidden, weight_hidden2ouput = init()
+
 for i in range(1000):
 
     for k in range(4):
-
-        weight_input2hidden, weight_hidden, weight_hidden2ouput = init()
 
         y_hat = weighted_sum(True, True, weight_input2hidden,
                              weight_hidden, weight_input2hidden)
